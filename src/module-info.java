@@ -4,5 +4,5 @@
 /**
  * 
  */
-module AulaObjetosT04 {
+module AtividadeAvaliativa01B2T04 {
 }
