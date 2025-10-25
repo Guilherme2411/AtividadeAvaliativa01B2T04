@@ -1,13 +1,11 @@
 package objet;
 
-import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
-
 public class ContaBancaria {
 	private String titular;
 	private double saldo;
 	
 	public ContaBancaria(String nometitular, double saldoInicial) {
-		if (titular==null || titular.trim().isEmpty()) {
+		if (nometitular==null || nometitular.trim().isEmpty()) {
 			System.out.println("Erro: O nome do titular nao pode estar vazio");
 		}else if(saldoInicial<0){
 			System.out.println("Saldo negativo");
@@ -19,8 +17,41 @@ public class ContaBancaria {
 		}
 	}
 
-	public void depositar(double valor){
+	public void depositar(double valor) {
 		if(valor<=0){
-			System.out.println("
+			System.out.println("Erro: o valor de deposito deve ser positivo");
+			return;
 		}
+		saldo=saldo + valor;
+		System.out.println("valor depositado: R$"+ valor);
 	}
+	
+	public void sacar(double valor) {
+		if(valor <=0) {
+			System.out.println("valor de saque deve ser positivo");
+			return;
+		}
+		if(valor>saldo) {
+			System.out.println("saldo insuficiente");
+			return;
+		}
+		saldo=saldo-valor;
+		System.out.println("Valor sacado: R$" + valor);
+		System.out.println("Valor em conta: R$"+ saldo);
+	}
+	public String getTitular() {
+		return titular;
+	}
+	public void setTitular (String novoTitular) {
+		if (novoTitular== null|| novoTitular.trim().isEmpty()) {
+			System.out.println("O nome do titular nao pode estar vazio");
+			return;
+		
+		}
+		titular=novoTitular;
+	}
+	public double getSaldo(){
+		
+		return saldo;
+	}
+}
