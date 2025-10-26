@@ -25,5 +25,5 @@ public class principal {
 		
 		entrada.close();
 		}
-	}
+}
 	
