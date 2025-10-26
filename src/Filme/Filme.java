@@ -25,7 +25,7 @@ public class Filme{
 		}
 	}
 		public void avaliacoes(double avaliacao, double quantidadeAvaliacao) {
-			if(avaliacao< 0) {
+			if(avaliacao < 0) {
 				System.out.println("a avaliacao nao pode ser menor que zero.");
 				return;
 			} else if(avaliacao>5) {

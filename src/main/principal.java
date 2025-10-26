@@ -1,6 +1,7 @@
 	package main;
 	import Filme.Filme;
-	import java.util.Scanner;
+	
+import java.util.Scanner;
 	
 	public class principal {
 		public static void main(String[] args) {
@@ -10,7 +11,7 @@
 			
 			System.out.println("Digite a avaliacao desse filme");
 			double avaliacao =entrada.nextDouble();
-			entrada.nextLine();
+
 			
 			System.out.println("Digite o nome do segundo filme");
 			String titulo2 = entrada.nextLine();
