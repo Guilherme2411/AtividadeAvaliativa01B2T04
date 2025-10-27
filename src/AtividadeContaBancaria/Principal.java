@@ -1,9 +1,9 @@
-package principal;
-import objet.ContaBancaria;
-
+package AtividadeContaBancaria;
 import java.util.Scanner;
 
-public class principal {
+import AtividadeContaBancaria.ContaBancaria;
+
+public class Principal {
 	public static void main(String[] args){
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Digite o nome do titular: ");

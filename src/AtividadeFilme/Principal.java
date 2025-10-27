@@ -1,9 +1,9 @@
-	package main;
-	import Filme.Filme;
+	package AtividadeFilme;
+	import java.util.Scanner;
+
+import AtividadeFilme.Filme;
 	
-import java.util.Scanner;
-	
-	public class principal {
+	public class Principal {
 		public static void main(String[] args) {
 			Scanner entrada = new Scanner(System.in);
 			System.out.println("Digite o nome do primeiro filme");
@@ -28,3 +28,4 @@ import java.util.Scanner;
 	        entrada.close();
 	    }
 	}
+

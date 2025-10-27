@@ -1,9 +1,10 @@
-package principalsalario;
-import funcionario.Funcionario;
-import objet.ContaBancaria;
+package AtividadeFuncionario;
+import AtividadeFuncionario.Funcionario;
 
 import java.util.Scanner;
-public class main {
+
+import AtividadeContaBancaria.ContaBancaria;
+public class Principal {
 	public static void main(String [] args) {
 		Scanner scanner = new Scanner (System.in);
 		System.out.println("Digite o nome do funcionario");
@@ -23,3 +24,5 @@ public class main {
 	}
 
 }
+
+

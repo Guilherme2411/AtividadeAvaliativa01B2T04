@@ -1,4 +1,4 @@
-package objet;
+package AtividadeContaBancaria;
 
 public class ContaBancaria {
 	private String titular;

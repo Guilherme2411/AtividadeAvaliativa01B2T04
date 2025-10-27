@@ -1,4 +1,4 @@
-package Filme;
+package AtividadeFilme;
 
 public class Filme{
 	private String titulo, titulo2;
